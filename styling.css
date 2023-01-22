@@ -1,0 +1,104 @@
+@font-face {
+    font-family: JetBrainsMono;
+    src: url(fonts/ttf/JetBrainsMono-Bold.ttf);
+
+}
+h1 {
+    font-family: JetBrainsMono;
+    text-align: center;
+    color: white;
+}
+p {
+    font-family: JetBrainsMono;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-family: JetBrainsMono;
+    text-align: center;
+    color: white;
+}
+
+.GradientClass {
+    background: rgb(12,63,175);
+    background: linear-gradient(90deg, rgba(12,63,175,1) 0%, rgba(0,188,217,1) 100%); 
+}
+
+.DescClass {
+    font-family: JetBrainsMono;
+    text-align: center;
+    padding: 25px;
+    margin: 10px auto 0px auto;
+    display: table;
+
+    /* other styling */
+    background-color: #33475b;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    color: white;
+}
+
+.ProjectClass {
+    font-family: JetBrainsMono;
+    text-align: center;
+    padding: 5px;
+    margin: 10px auto 0px auto;
+    display: table;
+    /* other styling */
+    background-color: #33475b;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    color: white;
+}
+
+
+img {
+    width:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 70px;
+    /* Other Styling */
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    
+}
+
+hr {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 10px;
+    /* styling */
+    background-color: rgb(36, 49, 56);
+    border-radius: 6px;
+    border-style: none;
+  }
+
+.projectbutton {
+    /* Styling */
+    background-color: #00bcd9;
+    box-shadow: 0px 0px 20px 5px #00bcd9;
+    border-radius: 10px;
+    border-color: rgb(36, 49, 56);
+    border-style: solid;
+    display: table;
+    padding: 15px 32px;
+    margin: 40px auto 0px auto;
+    /* text */
+    color: white;
+    font-family: JetBrainsMono;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
+.projectbutton:hover {
+    background-color: #00a5be;
+    box-shadow: 0px 0px
+}
