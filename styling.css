@@ -97,8 +97,36 @@ hr {
     text-align: center;
     transition-duration: 0.4s;
 }
+.sprojectbutton {
+    /* Styling */
+    background-color: #00bcd9;
+    box-shadow: 0px 0px 20px 5px #00bcd9;
+    border-radius: 10px;
+    border-color: rgb(36, 49, 56);
+    border-style: solid;
+    display: inline-block;
+    padding: 15px 32px;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-bottom: 0px;
+    /* text */
+    color: white;
+    font-family: JetBrainsMono;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
 
 .projectbutton:hover {
     background-color: #00a5be;
     box-shadow: 0px 0px
+}
+.sprojectbutton:hover {
+    background-color: #00a5be;
+    box-shadow: 0px 0px
+}
+
+.container{
+    text-align: center;
 }
