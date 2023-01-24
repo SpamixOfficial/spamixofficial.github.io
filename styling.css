@@ -134,11 +134,42 @@ hr {
 .socialsfa {
     color: white;
     display: inline-block;
-    width: 100%;
     font-size: 50px;
     text-align: center;
     transition-duration: 0.4s;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
 }
+.instagramfa {
+    background: linear-gradient(60deg, #FFDC80 10%, #FCAF45 20%, #F77737 30%, #F56040 35%, #FD1D1D 40%, #E1306C 50%, #C13584 60%, #833AB4 70%, #5B51D8 80%, #405DE6 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-size: 50px;
+    text-align: center;
+    transition-duration: 0.4s;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    transition-duration: 1s;
+}
+
 .socialsfa:hover {
     color: rgb(0, 0, 0);
+}
+
+.instagramfa:hover {
+    background: #000000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.credits {
+    justify-content: space-between; 
+    display: flex; 
+    font-size: 12px;
+    margin-top: 50px;
 }
