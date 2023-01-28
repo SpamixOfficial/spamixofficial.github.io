@@ -96,6 +96,7 @@ hr {
     font-family: JetBrainsMono;
     text-align: center;
     transition-duration: 0.4s;
+    text-decoration: none;
 }
 .sprojectbutton {
     /* Styling */
@@ -115,6 +116,7 @@ hr {
     font-family: JetBrainsMono;
     text-align: center;
     transition-duration: 0.4s;
+    text-decoration: none;
 }
 
 
