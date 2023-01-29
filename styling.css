@@ -119,18 +119,72 @@ hr {
     text-decoration: none;
 }
 
+.downbutton {
+    /* Styling */
+    background-color: #000ed9;
+    box-shadow: 0px 0px 10px 5px #000ed9;
+    border-radius: 10px;
+    border-color: rgba(36, 49, 56, 0);
+    border-style: solid;
+    display: table;
+    padding: 15px 32px;
+    margin: 40px auto 0px auto;
+    position: relative;
+    /* text */
+    color: white;
+    font-family: JetBrainsMono;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+}
 
 .projectbutton:hover {
     background-color: #00a5be;
-    box-shadow: 0px 0px
+    box-shadow: 0px 0px;
 }
+
+.projectbutton:active {
+    top: 1px;
+}
+
+.downbutton:hover {
+    background-color: #1822ac;
+    box-shadow: 0px 0px;
+    border-color: rgb(36, 49, 56);
+    border-style: solid;
+}
+
+.downbutton:active {
+    top: 1px;
+}
+
 .sprojectbutton:hover {
     background-color: #00a5be;
     box-shadow: 0px 0px
 }
 
+.sprojectbutton:active {
+    top: 1px;
+}
+
 .container {
     text-align: center;
+}
+
+.dcontainer {
+    background-color: #33475b9f;
+    font-family: JetBrainsMono;
+    margin: 10px auto 0px auto;
+    padding: 25px;
+    display: inline-block;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-bottom: 0px;
 }
 
 .socialsfa {
