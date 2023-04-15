@@ -32,7 +32,7 @@
         100% {background-position-y: bottom;}
     }
     body {
-        background-image: url('img/space.jpg');
+        background-image: url('/img/space.jpg');
     }
     .container {
         position: relative;
@@ -66,10 +66,22 @@
 <body>
     <div class="container"></div>
     <script>
+        let seconds = 0;
+        let alerted = false;
+        let timer = setInterval(function() {
+            seconds++;
+            if (seconds > 20) {
+                location.href = "/";
+            }
+            else if ((seconds > 60 ) && (alerted === false)) {
+                alert("Haven't you've been here a little bit too long? \nI'll redirect you back to the homepage in 20 seconds ;)");
+                alerted = true;
+            }
+        }, 1000);
         const container = document.querySelector('.container');
         function createFlyingImage() {
             const image = document.createElement('img');
-            image.src = 'img/dog.png';
+            image.src = '/img/dog.png';
             image.classList.add('flying-image');
             container.appendChild(image);
             
