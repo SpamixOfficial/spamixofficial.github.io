@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Error (OH NO)</title>
+</head>
+<style>
+    @font-face {
+    font-family: JetBrainsMono;
+    src: url(fonts/ttf/JetBrainsMono-Bold.ttf);
+
+    }
+    h1 {
+        font-family: JetBrainsMono;
+        color: white;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 40%;
+        width: 100%;
+    }
+    p {
+    font-family: JetBrainsMono;
+    text-align: center;
+    color: white;
+    }
+
+    @keyframes bounce {
+        100% {background-position-x: right;}
+        100% {background-position-y: bottom;}
+    }
+    body {
+        background-image: url('img/space.jpg');
+    }
+    .container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+      }
+      
+    .flying-image {
+        position: absolute;
+        animation: fly 5s linear;
+        animation-iteration-count: infinite;
+        width: 50px;
+        height: 50px;
+    }
+    
+    @keyframes fly {
+        from {
+            left: -100px;
+        }
+        to {
+            left: calc(100% + 100px);
+        }
+    }
+    .credits {
+    justify-content: space-between; 
+    display: flex; 
+    font-size: 12px;
+    margin-top: 50px;
+    }
+</style>
+<body>
+    <div class="container"></div>
+    <script>
+        const container = document.querySelector('.container');
+        function createFlyingImage() {
+            const image = document.createElement('img');
+            image.src = 'img/dog.png';
+            image.classList.add('flying-image');
+            container.appendChild(image);
+            
+            const containerWidth = container.offsetWidth;
+            const containerHeight = container.offsetHeight;
+            const imageWidth = image.offsetWidth;
+            const imageHeight = image.offsetHeight;
+            const randomTop = Math.random() * (containerHeight - imageHeight);
+            const randomLeft = Math.random() * (containerWidth - imageWidth);
+            
+            image.style.top = `${randomTop}px`;
+            image.style.left = `${randomLeft}px`;
+        }
+        setInterval(() => {
+            createFlyingImage();
+        }, 200)
+    </script>
+    <h1 style="font-size: 60px;">OH NO! YOU WERE NOT SUPPOSED TO SEE THIS :O</h1>
+    <h1 style="font-size: 20px; top: 90%;">btw this page does not exist :D</h1>
+    <h1 style="font-size: 20px; top: 80%;">404 ERROR (CRY ABOUT IT)</h1>
+    <div class="credits">
+        <p>spamixproducer@gmail.com</p>
+        <p>SpamixOfficial 2023</p>    
+    </div>
+</body>
+</html>
