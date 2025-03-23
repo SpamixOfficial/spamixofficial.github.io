@@ -66,6 +66,7 @@
 <body>
     <div class="container"></div>
     <script>
+        let dogs = 0;
         let seconds = 0;
         let alerted = false;
         let timer = setInterval(function() {
@@ -80,6 +81,11 @@
         }, 1000);
         const container = document.querySelector('.container');
         function createFlyingImage() {
+            console.log(dogs)
+            if (dogs >= 60) {
+                return;
+            }
+            dogs++;
             const image = document.createElement('img');
             image.src = '/img/dog.png';
             image.classList.add('flying-image');
